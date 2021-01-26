@@ -33,12 +33,6 @@ Choose the combination such that Cipher block chaining, Key and Initialization v
 - Encryption can repeated by passing the subsequent filenames. 
 - For decryption, make sure you keys in reverse order of what you have used for encryption.
 
-# Docker Commands
-To build the docker image:
-> docker build -f Dockerfile -t hello-python:latest .
-
-To run the docker container on background 
-> docker run -d -p 5001:5000 hello-python
 
 
 # how to run
@@ -62,9 +56,6 @@ EXPOSE 5000/tcp
 CMD ["python3", "/app/app.py"]
 
 
-
-# Happy Encryption  :joy: :v:
-# :no_pedestrians: :do_not_litter: Save your privacy :muscle: :metal:
 
 
 

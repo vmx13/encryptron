@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title> File encrypter and decrypter </title>
+	<link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='styles/style.css') }}">
+    <link rel="shortcut icon" href="{{ url_for('static', filename='favicon.png') }}">
+</head>
+
+<body>
+
+<h1> File Encrypter and Decrypter </h1>
+<br>
+
+<p><a href="{{ url_for('list_files') }}"> List Available Files </a></p>
+<br>
+
+<form name="myForm" action="" method="post" onsubmit="">
+    <p>  <label for="fname">File Name</label>
+        <input type="text" id="fname" name="fname">
+    </p>
+    <p>   <label for="pwd">Password</label>
+        <input type="password" id="pwd" name="pwd">   <br><br>
+<p>
+<input type="radio" name="options" id="Encrypt" value="Encrypt"> Encrypt </input><br>
+<input type="radio" name="options" id="Decrypt" value="Decrypt"> Decrypt </input><br>
+</p>
+<p><input type=submit value=Next></p>
+</form>
+
+   <footer
+      style="
+        position: absolute;
+        bottom: 0;
+        color: white;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        letter-spacing: 0.1vw;
+        text-align: center;
+        margin: 0;
+        width: 98vw;
+        font-size: 1vw;
+        padding: 0.4vw 0;
+      "
+    >
+      © 2021&nbsp;
+      <span style="color: rgb(87, 168, 255)"> VAIBHAV MISHRA </span> &
+      <span style="color: rgb(87, 168, 255)"> SANTOSH PANDEY </span>. &nbsp; ALL
+      RIGHTS RESERVED.
+    </footer>
+
+
+</body>
+
+<style>
+body{
+    background:rgb(36, 36, 46);
+}
+
+p a {
+color:rgb(87, 168, 255);
+text-decoration: none;
+font-size:1.55vw;
+background:rgb(0, 0, 0);
+transition:.2s ease-in-out background ,.2s ease-in-out color;
+padding:.8vw 1.28vw;
+font-weight:600;
+border-radius:.4vw;
+font-family:arial;
+}
+
+p a:hover{
+transition:.2s ease-in-out background, .2s ease-in-out color;
+background:rgb(87, 168, 255);
+color:black;
+}
+
+h1{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+font-weight:1000;
+font-size: calc(16px + 2vw);
+color:rgb(87, 168, 255);
+}
+
+label{
+color:white;
+font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+font-size:1.65vw;
+}
+
+input[type='text'], input[type='password']
+{
+background:rgb(17, 17, 17);
+width:15vw;
+border:.15vw rgb(31, 31, 31) solid;
+border-bottom:.2vw solid rgb(87,168,255);
+padding:.4vw ;
+float:right;
+outline:none;
+color:rgb(87,168,255)
+}
+
+form{
+width:25.4vw;
+}
+ 
+form p:nth-of-type(3)
+{
+font-size:1.5vw;
+color:rgb(154, 203, 255);
+font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+input[type="submit"]
+{
+margin-top:.5vw;
+background:black;
+color:rgb(87, 168, 255);
+padding:.51vw .79vw;
+font-weight:600;
+border:none;
+outline:none;
+font-size:1.54vw;
+border-radius:1vw;
+cursor:pointer;
+
+}
+
+</style>
+
+
+</html>
